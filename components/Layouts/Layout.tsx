@@ -1,7 +1,17 @@
 import React from 'react'
+import Navbar from '../Navbar';
+import Meta from '../Meta';
 
-export default function Layout() {
+export default function Layout({ children }) {
   return (
-    <div>Layout</div>
+    <>
+        <Meta />
+        <body>
+          <Navbar />
+          <div>
+            {children}
+          </div>
+        </body>
+    </>
   )
 }
