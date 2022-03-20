@@ -1,0 +1,17 @@
+.contact-form {
+    label {
+        font-family: 'Source Code Pro', monospace;
+    }
+    .form-control {
+        width: 35rem;
+        height: 4rem;
+        border: 0.1rem solid #000;
+    }
+    .form-control.textarea {
+        height: 10rem;
+    }
+    .form-group {
+        width: 35rem;
+        padding: 0.2rem;
+    }
+}
