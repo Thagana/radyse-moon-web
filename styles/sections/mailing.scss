@@ -1,0 +1,29 @@
+.mailing-list {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    align-items: center;
+    flex-direction: column;
+    .header {
+        padding: 4rem;
+        h3 {
+            color: #fff;
+        }
+    }
+    .form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        .form-group {
+            padding: 0.5rem;
+            .form-control {
+                width: 40rem;
+                height: 3rem;
+            }
+        }
+    }
+}
