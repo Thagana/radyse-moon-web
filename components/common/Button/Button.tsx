@@ -5,7 +5,7 @@ interface Props {
     onClick(): void;
     children: string;
     type?: 'submit' | 'button',
-    design?: 'primary' | 'secondary'
+    design?: 'primary' | 'secondary' | 'primary long'
 }
 
 

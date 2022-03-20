@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar';
 import Meta from '../Meta';
+import Footer from '../Sections/Footer';
 
 export default function Layout({ children }) {
   return (
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
           <div>
             {children}
           </div>
+          <Footer />
         </body>
     </>
   )
