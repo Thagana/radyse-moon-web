@@ -38,6 +38,16 @@ export default function Navbar() {
                   <a className="nav-link">Contact Us</a>
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <Link href='/privacy-policies'>
+                  <a className="nav-link">Privacy & Policies</a>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link href='/term-condition'>
+                  <a className="nav-link">Terms and Condition</a>
+                  </Link>
+                </li>
             </ul>
             <ul className="navbar-nav d-flex align-items-center">
                 <li className="nav-item mx-3">
