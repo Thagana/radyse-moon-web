@@ -24,9 +24,9 @@ export default function Footer() {
         <div className="col-6 col-md">
             <h5>Resources</h5>
             <ul className="list-unstyled text-small">
-            <li><Link href="/resource">Resource</Link></li>
-            <li><Link href="/resource-name">Resource name</Link></li>
-            <li><Link href="/another-resource">Another resource</Link></li>
+            <li><Link href="/privacy-policies">Privacy & Policies</Link></li>
+            <li><Link href="/terms-conditions">Term & Conditions</Link></li>
+            <li><Link href="/another-resource">News source</Link></li>
             <li><Link href="/final-resource">Final resource</Link></li>
             </ul>
         </div>
