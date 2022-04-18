@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 interface Props {
-    onClick(): void;
+    onClick?: () => void;
     children: string;
     type?: 'submit' | 'button',
     design?: 'primary' | 'secondary' | 'primary long'

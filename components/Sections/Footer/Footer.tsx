@@ -13,12 +13,11 @@ export default function Footer() {
         <div className="col-6 col-md">
             <h5>Features</h5>
             <ul className="list-unstyled text-small">
-            <li><Link href="/resource">Cool stuff</Link></li>
-            <li><Link href="/resource">Random feature</Link></li>
-            <li><Link href="/resource">Team feature</Link></li>
-            <li><Link href="/resource">Stuff for developers</Link></li>
-            <li><Link href="/resource">Another one</Link></li>
-            <li><Link href="/resource">Last time</Link></li>
+            <li><Link href="">Push Notification Updates</Link></li>
+            <li><Link href="">Email Inbox News update</Link></li>
+            <li><Link href="">Increase News Fetch Frequency</Link></li>
+            <li><Link href="">Change News Language</Link></li>
+            <li><Link href="">And Many More</Link></li>
             </ul>
         </div>
         <div className="col-6 col-md">
@@ -26,17 +25,6 @@ export default function Footer() {
             <ul className="list-unstyled text-small">
             <li><Link href="/privacy-policies">Privacy & Policies</Link></li>
             <li><Link href="/terms-conditions">Term & Conditions</Link></li>
-            <li><Link href="/another-resource">News source</Link></li>
-            <li><Link href="/final-resource">Final resource</Link></li>
-            </ul>
-        </div>
-        <div className="col-6 col-md">
-            <h5>About</h5>
-            <ul className="list-unstyled text-small">
-            <li><Link href="/team">Team</Link></li>
-            <li><Link href="/locations">Locations</Link></li>
-            <li><Link href="/privacy">Privacy</Link></li>
-            <li><Link href="/terms">Terms</Link></li>
             </ul>
         </div>
         </div>
