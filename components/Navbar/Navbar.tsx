@@ -49,13 +49,13 @@ export default function Navbar() {
           </ul>
           <ul className='navbar-nav d-flex align-items-center'>
             <li className='nav-item mx-3'>
-              <Link href='https://app.theultimatenews.xyz/login'>Login</Link>
+              <Link href='https://app.theultimatenews.xyz'>Login</Link>
             </li>
             <li className='nav-item'>
               <Button
                 type='button'
                 onClick={() => {
-                  window.location.href = "https://app.theultimatenews.xyz/login";
+                  window.location.href = "https://app.theultimatenews.xyz";
                 }}
                 design='primary'
               >
