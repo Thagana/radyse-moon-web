@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../../common/Button";
 
-import Network from '../../../services/networking';
+import Network from "../../../services/networking";
 
 export default function Mailing() {
-  const [email, setEmail] = React.useState('');
-  const [serverMessage, setServerMessage] = React.useState('');
+  const [email, setEmail] = React.useState("");
+  const [serverMessage, setServerMessage] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
   const handleSubmit = async (event: React.SyntheticEvent) => {
@@ -17,7 +17,7 @@ export default function Mailing() {
       setLoading(false);
     } catch (error) {
       console.log(error);
-      setServerMessage('Something went wrong, please try again later');
+      setServerMessage("Something went wrong, please try again later");
       setLoading(false);
     }
   };
@@ -25,11 +25,14 @@ export default function Mailing() {
   return (
     <div className='mailing-list'>
       <div>
-          {serverMessage && (
-              <div className={`alert alert-${serverMessage ? 'danger': 'primary'}`} role="alert">
-                  {serverMessage}
-              </div>
-          )}
+        {serverMessage && (
+          <div
+            className={`alert alert-${serverMessage ? "danger" : "primary"}`}
+            role='alert'
+          >
+            {serverMessage}
+          </div>
+        )}
       </div>
       <div className='header'>
         <header>
@@ -50,7 +53,7 @@ export default function Mailing() {
           </div>
           <div className='form-group'>
             <Button design='primary' type='submit'>
-              {loading ? 'Loading ...' : 'Submit' } 
+              {loading ? "Loading ..." : "Submit"}
             </Button>
           </div>
         </form>
