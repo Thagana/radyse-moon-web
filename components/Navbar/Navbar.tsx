@@ -5,7 +5,10 @@ import Button from "../common/Button";
 
 export default function Navbar() {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light'>
+    <nav
+      className='navbar navbar-expand-lg navbar-light'
+      role='navigation'
+    >
       <div className='container-fluid'>
         <Link href='/'>
           <div className='logo-container'>
@@ -36,8 +39,15 @@ export default function Navbar() {
           <ul className='navbar-nav'>
             <li className='nav-item'>
               <Link href='/'>
-                <a className='nav-link active' aria-current='page'>
+                <a className='nav-link' aria-current='page'>
                   Home
+                </a>
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link href='/pricing'>
+                <a className='nav-link' aria-current='page'>
+                  Pricing
                 </a>
               </Link>
             </li>
