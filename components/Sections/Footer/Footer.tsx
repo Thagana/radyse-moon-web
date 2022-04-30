@@ -15,7 +15,7 @@ export default function Footer() {
             <ul className="list-unstyled text-small">
             <li><Link href="">Push Notification Updates</Link></li>
             <li><Link href="">Email Inbox News update</Link></li>
-            <li><Link href="">Increase News Fetch Frequency</Link></li>
+            <li><Link href="">SMS Notification</Link></li>
             <li><Link href="">Change News Language</Link></li>
             <li><Link href="">And Many More</Link></li>
             </ul>

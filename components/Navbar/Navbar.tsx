@@ -36,8 +36,15 @@ export default function Navbar() {
           <ul className='navbar-nav'>
             <li className='nav-item'>
               <Link href='/'>
-                <a className='nav-link active' aria-current='page'>
+                <a className='nav-link' aria-current='page'>
                   Home
+                </a>
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link href='/pricing'>
+                <a className='nav-link' aria-current='page'>
+                  Pricing
                 </a>
               </Link>
             </li>
