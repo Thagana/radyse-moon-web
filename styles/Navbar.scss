@@ -1,13 +1,12 @@
 .navbar {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     height: 8rem;
+    width: 100%;
     .logo-container {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem;
-        margin: 1rem;
         .img {
             border-radius: 4rem;
         }

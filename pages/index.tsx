@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Button from "../components/common/Button";
 import Mailing from "../components/Sections/Mailing";
 import { config } from "../config/configs";
+import Image from '../components/common/Image';
 
 export default function Home() {
   return (
@@ -28,10 +28,10 @@ export default function Home() {
         </div>
         <div className="right-panel">
           <div className="image-show-first">
-            <Image src='/assets/show-case-1.jpg' width={775} height={1500} />
+            <Image src='/assets/show-case-1.jpg' className="images" />
           </div>
           <div className="image-show-second">
-            <Image src='/assets/show-case-3.jpg' width={775} height={1500} />
+            <Image src='/assets/show-case-3.jpg' className="images" />
           </div>
         </div>
       </div>

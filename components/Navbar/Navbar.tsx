@@ -5,7 +5,10 @@ import Button from "../common/Button";
 
 export default function Navbar() {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light'>
+    <nav
+      className='navbar navbar-expand-lg navbar-light'
+      role='navigation'
+    >
       <div className='container-fluid'>
         <Link href='/'>
           <div className='logo-container'>
