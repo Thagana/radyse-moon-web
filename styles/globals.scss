@@ -1,19 +1,21 @@
 @import 'bootstrap/dist/css/bootstrap.css';
 @import './Navbar.scss';
-@import './Home.module.scss';
 
 // pages
+@import './pages/home.scss';
 @import './pages/contact.scss';
 @import './pages/privacy.scss';
-
+@import './pages/pricing.scss';
 // sections
+
 @import './sections/mailing.scss';
 
 // utils
 @import './utils/Button.scss';
 
 * {
-    margin: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 a {
@@ -24,4 +26,24 @@ a {
 body {
     background-color: #f9f9f9f5;
     font-family: 'Source Code Pro', monospace;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body > #__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+body > div > section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body > div > footer {
+    width: 100%;
 }
