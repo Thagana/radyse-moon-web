@@ -4,11 +4,11 @@ import Image from "next/image";
 import Button from "../common/Button";
 
 export default function Navbar() {
+  const [isNavCollapsed, setIsNavCollapsed] = React.useState(false);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   return (
-    <nav
-      className='navbar navbar-expand-lg navbar-light'
-      role='navigation'
-    >
+    <nav className='navbar navbar-expand-lg navbar-light' role='navigation'>
       <div className='container-fluid'>
         <Link href='/'>
           <div className='logo-container'>
@@ -29,11 +29,14 @@ export default function Navbar() {
           aria-controls='navbarNav'
           aria-expanded='false'
           aria-label='Toggle navigation'
+          onClick={handleNavCollapse}
         >
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
-          className='collapse navbar-collapse justify-content-between'
+          className={`${
+            isNavCollapsed ? "collapse" : ""
+          } navbar-collapse justify-content-between`}
           id='navbarNav'
         >
           <ul className='navbar-nav'>
