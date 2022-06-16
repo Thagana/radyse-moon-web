@@ -68,11 +68,11 @@ export default function Navbar() {
               <Button
                 type='button'
                 onClick={() => {
-                  window.location.href = "https://app.theultimatenews.xyz";
+                  window.location.href = "https://play.google.com/store/apps/details?id=com.leumasco.ultimatenews";
                 }}
                 design='primary'
               >
-                Register
+                Download App
               </Button>
             </li>
           </ul>

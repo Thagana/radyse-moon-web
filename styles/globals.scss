@@ -47,3 +47,23 @@ body > div > section {
 body > div > footer {
     width: 100%;
 }
+
+.cookie-consent {
+    z-index: 100;
+    background-color: aliceblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    margin: 0rem 2rem;
+}
+
+.cookie-consent > .cookie-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    margin: 0rem 2rem;
+}
+.cookie-consent > .cookie-container >  p > .privacy-link-cookie  {
+    text-decoration: underline;
+}

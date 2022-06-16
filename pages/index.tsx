@@ -10,12 +10,12 @@ export default function Home() {
         <div className="left-panel">
           <div className="header">
             <header className="header">
-              OvalBark
+              The Ultimate News
             </header>
           </div>
           <div>
             <p className="description">
-              OvalBark is a news aggregator service, that delivers news from different sources and publication
+              The Ultimate News is a news aggregator service, that delivers news from different sources and publication
             </p>
           </div>
           <div className="download-icons">
