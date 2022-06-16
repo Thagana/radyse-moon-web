@@ -12,10 +12,10 @@ export default function Meta(props: Props) {
   return (
     <Head>
       <title>{title}</title>
-      <meta property='og:title' content='OvalBark' key='title' />
+      <meta property='og:title' content='The Ultimate News' key='title' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name='description' content={description} />
-      <meta name='name' content='OvalBark' />
+      <meta name='name' content='The Ultimate News' />
       <meta name='keywords' content={keywords} />
       <script
         async
@@ -36,9 +36,9 @@ export default function Meta(props: Props) {
 }
 
 Meta.defaultProps = {
-  title: "OvalBark",
+  title: "The Ultimate News",
   keywords:
-    "News, Updates, Breaking News, Application, OvalBark, News Subscription",
+    "News, Updates, Breaking News, Application, The Ultimate News, News Subscription",
   description:
-    "OvalBark is a news application that delivers news articles to you",
+    "The Ultimate News is a news application that delivers news articles to you",
 };
