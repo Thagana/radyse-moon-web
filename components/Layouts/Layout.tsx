@@ -1,5 +1,4 @@
 import React from "react";
-import Script from "next/script";
 import Navbar from "../Navbar";
 import Meta from "../Meta";
 import Footer from "../Sections/Footer";
@@ -10,7 +9,7 @@ export default function Layout({ children }) {
     <>
       <Meta />
       <Navbar />
-      <section className='section'>{children}</section>
+        <>{children}</>
       <Footer />
       <CookieConsent />
     </>

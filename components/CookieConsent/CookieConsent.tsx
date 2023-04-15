@@ -34,7 +34,9 @@ export default function CookieConsent() {
   return (
     <div className='cookie-consent'>
       <div className='cookie-container'>
-        <p>This website uses cookies to enhance user experience. You can find a more detail usage based on the <div className="privacy-link-cookie"><Link href="/privacy-policies">Privacy and Policy</Link></div>page.</p>
+        <div>
+          <p>This website uses cookies to enhance user experience. You can find a more detail usage based on the <div className="privacy-link-cookie"><Link href="/privacy-policies">Privacy and Policy</Link></div>page.</p>
+        </div>
         <Button design='primary' onClick={handleCookie}>
           I understand
         </Button>

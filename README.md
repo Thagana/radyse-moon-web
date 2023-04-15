@@ -1,4 +1,3 @@
-## The Ultimate News Mobile Application
+# Radesy Moon
 
-### About  Ultimate News
-Ultimate news is a news application, that serves news application form thousands of different sources around the planet
+## What is Radesy?

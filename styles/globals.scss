@@ -13,6 +13,10 @@
 // utils
 @import './utils/Button.scss';
 
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+}
+
 * {
     margin: 0rem;
     padding: 0rem;
@@ -26,7 +30,6 @@ a {
 body {
     background-color: #f9f9f9f5;
     font-family: 'Source Code Pro', monospace;
-    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -48,12 +51,21 @@ body > div > footer {
     width: 100%;
 }
 
+body > div > footer {
+    h5 {
+        font-family: 'Source Code Pro', monospace;
+        text-decoration: underline;
+    }
+}
+
 .cookie-consent {
     z-index: 100;
-    background-color: aliceblue;
+    background-color: rgb(43, 3, 43);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
     margin: 0rem 2rem;
+    color: #fff;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .cookie-consent > .cookie-container {
@@ -63,6 +75,7 @@ body > div > footer {
     justify-content: space-between;
     padding: 2rem;
     margin: 0rem 2rem;
+    flex-wrap: wrap;
 }
 .cookie-consent > .cookie-container >  p > .privacy-link-cookie  {
     text-decoration: underline;

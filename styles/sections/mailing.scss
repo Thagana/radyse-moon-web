@@ -7,6 +7,7 @@
     align-items: center;
     flex-direction: column;
     padding: 20rem;
+    box-sizing: border-box;
     .header {
         padding: 4rem;
         h3 {
@@ -28,6 +29,8 @@
     }
       @media only screen and (max-width: 882px) {
         /*Small smartphones [325px -> 425px]*/
+        // background-color: rgb(43, 3, 43);
+        width: auto;
         .header {
             padding: 5rem;
             h3 {

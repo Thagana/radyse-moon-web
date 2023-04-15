@@ -14,8 +14,8 @@ export default function Image(props: Props) {
           className={className}
           src={src}
           alt='Show Images'
-          height='104'
-          width='104'
+          height='80px'
+          width='80px'
           initial={{ x: 300, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -300, opacity: 0 }}

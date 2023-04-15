@@ -12,11 +12,12 @@ export default function Meta(props: Props) {
   return (
     <Head>
       <title>{title}</title>
-      <meta property='og:title' content='The Ultimate News' key='title' />
+      <meta property='og:title' content='Radyse Moon' key='title' />
       <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       <meta name='description' content={description} />
-      <meta name='name' content='The Ultimate News' />
+      <meta name='name' content='Radyse Moon' />
       <meta name='keywords' content={keywords} />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <script
         async
         src='https://www.googletagmanager.com/gtag/js?id=G-B92XVTGRKR'
@@ -36,9 +37,9 @@ export default function Meta(props: Props) {
 }
 
 Meta.defaultProps = {
-  title: "The Ultimate News",
+  title: "Radyse Moon",
   keywords:
-    "News, Updates, Breaking News, Application, The Ultimate News, News Subscription",
+    "News, Updates, Breaking News, Application, Radyse Moon, News Subscription",
   description:
-    "The Ultimate News is a news application that delivers news articles to you",
+    "Radyse Moon is a news application that delivers news articles to you",
 };
