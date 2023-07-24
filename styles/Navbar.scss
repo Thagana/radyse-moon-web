@@ -1,21 +1,23 @@
-.navbar {
-    background-color: rgb(255, 255, 255);
-    height: 8rem;
-    width: 100%;
-    .logo-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        .img {
-            border-radius: 4rem;
-        }
-    }
-    .navbar-collapse {
-        background-color: rgb(255, 255, 255);
-        padding-bottom: 1rem;
-        margin-left: 0rem;
-        margin-right: 0rem;
-        width: 100%;
-    }
+nav {
+  width: 100vw !important;
+  .navbar-item {
+      text-decoration: underline;
+      .button.is-link {
+          border: 0px solid #fff;
+          background-color: transparent;
+          color: #31004a;
+      }
+      .button {
+          background-color: #31004a;
+          color: #fff;
+          text-decoration: none !important;
+      }
+      img {
+          max-height: 2.75rem;
+          border-radius: 1rem;
+      }
+      &:hover {
+          cursor: pointer;
+      }
+  }
 }

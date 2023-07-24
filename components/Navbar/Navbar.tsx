@@ -4,80 +4,40 @@ import Image from "next/image";
 import Button from "../common/Button";
 
 export default function Navbar() {
-  const [isNavCollapsed, setIsNavCollapsed] = React.useState(false);
-
-  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+  const [isActive, setIsActive] = React.useState(false);
+  const toggleNavBar = () => {
+      setIsActive(!isActive);
+  }
   return (
-    <nav className='navbar navbar-expand-lg navbar-light' role='navigation'>
-      <div className='container-fluid'>
-        <Link href='/'>
-          <div className='logo-container'>
-            <Image
-              className='logo-image'
-              src='https://avatars.githubusercontent.com/u/68122202?s=400&u=4abc9827a8ca8b9c19b06b9c5c7643c87da51e10&v=4'
-              alt='Ultimate News Image'
-              width={100}
-              height={100}
-            />
-          </div>
-        </Link>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
-          aria-controls='navbarNav'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-          onClick={handleNavCollapse}
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div
-          className={`${
-            isNavCollapsed ? "collapse" : ""
-          } navbar-collapse justify-content-between`}
-          id='navbarNav'
-        >
-          <ul className='navbar-nav'>
-            <li className='nav-item'>
-              <Link href='/'>
-                <a className='nav-link' aria-current='page'>
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link href='/pricing'>
-                <a className='nav-link' aria-current='page'>
-                  Pricing
-                </a>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link href='/contact'>
-                <a className='nav-link'>Contact Us</a>
-              </Link>
-            </li>
-          </ul>
-          <ul className='navbar-nav d-flex align-items-center'>
-            <li className='nav-item mx-3'>
-              <Link href='https://app.theultimatenews.xyz'>Login</Link>
-            </li>
-            <li className='nav-item'>
-              <Button
-                type='button'
-                onClick={() => {
-                  window.location.href = "https://app.theultimatenews.xyz";
-                }}
-                design='primary'
-              >
-                Register
-              </Button>
-            </li>
-          </ul>
+    <nav className="navbar">
+    <div className="container is-fluid">
+        <div className="navbar-brand">
+            <div className='navbar-item'>
+                <Link href="/">
+                    <Image className="image" src="/assets/radyse-moon.png" alt="Radyse Moon logo" height="100px" width="100%" />
+                </Link>
+            </div>
+            <button onClick={toggleNavBar} className={`navbar-burger ${isActive ? 'is-active' : ''}`} role="button" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
-      </div>
-    </nav>
+        <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+            <div className="navbar-start">
+                <Link href="/about">
+                    <div className="navbar-item">
+                        About
+                    </div>
+                </Link>
+                <Link href="/contact-us">
+                    <div className='navbar-item'>
+                        Contact Us
+                    </div>
+                </Link>
+            </div>
+        </div>
+    </div>
+</nav>
   );
 }

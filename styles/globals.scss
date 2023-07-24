@@ -1,49 +1,47 @@
-@import 'bootstrap/dist/css/bootstrap.css';
-@import './Navbar.scss';
-
-// pages
-@import './pages/home.scss';
-@import './pages/contact.scss';
-@import './pages/privacy.scss';
-@import './pages/pricing.scss';
-// sections
-
-@import './sections/mailing.scss';
-
-// utils
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import './utils/utils.scss';
 @import './utils/Button.scss';
 
-* {
-    margin: 0rem;
-    padding: 0rem;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Mono", monospace;  
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+#__next {
+  width: 100vw;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  color: inherit;
+  text-decoration: underline;
 }
 
-body {
-    background-color: #f9f9f9f5;
-    font-family: 'Source Code Pro', monospace;
-    width: 100vw;
-    overflow-x: hidden;
-}
 
-body > #__next {
+.cookie-consent {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    overflow-x: hidden;
-}
-body > div > section {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: rgb(255, 255, 254);
+    padding: 3rem;
+    margin: 0rem 10rem;
+    border-radius: 2rem;
+    position: sticky;
+    top: 0;
+    .cookie-container {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
 }
 
-body > div > footer {
-    width: 100%;
-}
+@import './navbar';
+@import './pages/home';
+@import './pages/contact.scss';

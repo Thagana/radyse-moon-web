@@ -1,33 +1,43 @@
-import React from 'react'
-import Image from 'next/image';
-import Link from 'next/link';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer pt-4 my-md-5 pt-md-5 px-5">
-        <div className="row">
-        <div className="col-12 col-md">
-            <Image className="mb-2" src="https://avatars.githubusercontent.com/u/68122202?s=400&u=4abc9827a8ca8b9c19b06b9c5c7643c87da51e10&v=4" alt="Northern Breeze" width="100" height="100" />
-            <small className="d-block mb-3 text-muted">2022 &copy;Northern breeze </small>
-        </div>
-        <div className="col-6 col-md">
-            <h5>Features</h5>
-            <ul className="list-unstyled text-small">
-            <li><Link href="">Push Notification Updates</Link></li>
-            <li><Link href="">Email Inbox News update</Link></li>
-            <li><Link href="">SMS Notification</Link></li>
-            <li><Link href="">Change News Language</Link></li>
-            <li><Link href="">And Many More</Link></li>
+    <footer className="section">
+      <div className="container">
+        <div className="pb-5 is-flex is-flex-wrap-wrap is-justify-content-between is-align-items-center">
+          <div className="mr-auto mb-2">
+            <Image
+              src="/assets/radyse-moon.png"
+              alt="Radyse Moon logo"
+              height="100px"
+              width="100%"
+            />
+            <Link href="/">
+              <h4 className="header">Radyse Moon</h4>
+            </Link>
+          </div>
+          <div>
+            <ul className="is-flex is-flex-wrap-wrap is-align-items-center is-justify-content-center">
+              <li className="mr-4">
+                <Link href="/about">About</Link>
+              </li>
+              <li className="mr-4">
+                <Link href="/contact-us">Contact Us</Link>
+              </li>
             </ul>
+          </div>
         </div>
-        <div className="col-6 col-md">
-            <h5>Resources</h5>
-            <ul className="list-unstyled text-small">
-            <li><Link href="/privacy-policies">Privacy & Policies</Link></li>
-            <li><Link href="/terms-conditions">Term & Conditions</Link></li>
-            </ul>
+      </div>
+      <div className="pt-5" style={{ borderTop: "1px solid #dee2e6" }}></div>
+      <div className="container">
+        <div className="is-flex-tablet is-justify-content-between is-align-items-center">
+          <p>All rights reserved © Radyse Moon 2023</p>
+          <div className="py-2 is-hidden-tablet"></div>
+          <div className="ml-auto"></div>
         </div>
-        </div>
-  </footer>
-  )
+      </div>
+    </footer>
+  );
 }

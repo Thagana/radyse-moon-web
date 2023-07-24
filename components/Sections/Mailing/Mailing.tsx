@@ -23,36 +23,34 @@ export default function Mailing() {
   };
 
   return (
-    <div className='mailing-list'>
+    <div className="mailing-list">
       <div>
         {serverMessage && (
           <div
             className={`alert alert-${serverMessage ? "danger" : "primary"}`}
-            role='alert'
+            role="alert"
           >
             {serverMessage}
           </div>
         )}
       </div>
-      <div className='header'>
-        <header>
-          <h3>Get notified when we have updates</h3>
-        </header>
-      </div>
-      <div className='email-form'>
-        <form className='form' onSubmit={handleSubmit}>
-          <div className='form-group'>
+      <header className="header">
+        <h1>Get notified when we have updates</h1>
+      </header>
+      <div className="email-form">
+        <form className="form" onSubmit={handleSubmit}>
+          <div className="form-group">
             <input
-              name='email'
-              type='email'
+              name="email"
+              type="email"
               value={email}
               onChange={(val) => setEmail(val.target.value)}
-              placeholder='Enter Email'
-              className='form-control'
+              placeholder="Enter Email"
+              className="form-control"
             />
           </div>
-          <div className='form-group'>
-            <Button design='primary' type='submit'>
+          <div className="form-group">
+            <Button design="primary" type="submit">
               {loading ? "Loading ..." : "Submit"}
             </Button>
           </div>
