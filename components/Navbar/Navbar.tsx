@@ -4,85 +4,40 @@ import Image from "next/image";
 import Button from "../common/Button";
 
 export default function Navbar() {
-  const [isNavCollapsed, setIsNavCollapsed] = React.useState(false);
-
-  const loginLink = process.env.LOGIN_LINK || 'http://localhost:3001'
-  const downloadLink = process.env.DOWNLOAD_LINK || 'http://localhost:3001'
-  
-  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
-  
+  const [isActive, setIsActive] = React.useState(false);
+  const toggleNavBar = () => {
+      setIsActive(!isActive);
+  }
   return (
-    <nav className='navbar navbar-expand-lg navbar-light' role='navigation'>
-      <div className='container-fluid'>
-        <Link href='/'>
-          <div className='logo-container'>
-            <Image
-              className='logo-image'
-              src='/assets/radyse-moon.png'
-              alt='Ultimate News Image'
-              width={100}
-              height={100}
-            />
-          </div>
-        </Link>
-        <button
-          className='navbar-toggler'
-          type='button'
-          data-bs-toggle='collapse'
-          data-bs-target='#navbarNav'
-          aria-controls='navbarNav'
-          aria-expanded='false'
-          aria-label='Toggle navigation'
-          onClick={handleNavCollapse}
-        >
-          <span className='navbar-toggler-icon'></span>
-        </button>
-        <div
-          className={`${
-            !isNavCollapsed ? "collapse" : ""
-          } navbar-collapse justify-content-between`}
-          id='navbarNav'
-        >
-          <ul className='navbar-nav'>
-
-          </ul>
-          <ul className='navbar-nav d-flex align-items-center'>
-          <li className='nav-item'>
-              <Link href='/'>
-                <a className='nav-link' aria-current='page'>
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link href='/pricing'>
-                <a className='nav-link' aria-current='page'>
-                  Pricing
-                </a>
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link href='/contact'>
-                <a className='nav-link'>Contact Us</a>
-              </Link>
-            </li>
-            <li className='nav-item mx-3'>
-              <Link href={loginLink}>Login</Link>
-            </li>
-            <li className='nav-item'>
-              <Button
-                type='button'
-                onClick={() => {
-                  window.location.href = "https://play.google.com/store/apps/details?id=com.leumasco.ultimatenews";
-                }}
-                design='primary'
-              >
-                Download App
-              </Button>
-            </li>
-          </ul>
+    <nav className="navbar">
+    <div className="container is-fluid">
+        <div className="navbar-brand">
+            <div className='navbar-item'>
+                <Link href="/">
+                    <Image className="image" src="/assets/radyse-moon.png" alt="Radyse Moon logo" height="100px" width="100%" />
+                </Link>
+            </div>
+            <button onClick={toggleNavBar} className={`navbar-burger ${isActive ? 'is-active' : ''}`} role="button" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
         </div>
-      </div>
-    </nav>
+        <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
+            <div className="navbar-start">
+                <Link href="/about">
+                    <div className="navbar-item">
+                        About
+                    </div>
+                </Link>
+                <Link href="/contact-us">
+                    <div className='navbar-item'>
+                        Contact Us
+                    </div>
+                </Link>
+            </div>
+        </div>
+    </div>
+</nav>
   );
 }
