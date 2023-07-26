@@ -20,15 +20,15 @@ export default function Meta(props: Props) {
       <link rel="icon" type="image/x-icon" href="/favicon.ico" />
       <script
         async
-        src='https://www.googletagmanager.com/gtag/js?id=G-B92XVTGRKR'
+        src="https://www.googletagmanager.com/gtag/js?id=G-YPQ900XJGR"
       />
       <script
         dangerouslySetInnerHTML={{
           __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-B92XVTGRKR');
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YPQ900XJGR');
         `,
         }}
       />
