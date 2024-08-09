@@ -20,7 +20,8 @@ export default function Home() {
                 Radyse Moon
               </h2>
               <p className="subtitle mb-5">
-                Radyse Moon is an AI powered news aggregator that aggregates news from multiple sources
+                Radyse Moon is an AI powered news aggregator that aggregates
+                news from multiple sources
               </p>
               <div className="buttons is-centered">
                 <Link href="#">

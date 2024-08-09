@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../common/Button";
 
 export default function Navbar() {
   const [isActive, setIsActive] = React.useState(false);
@@ -25,7 +24,7 @@ export default function Navbar() {
         </div>
         <div className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
             <div className="navbar-start">
-                <Link href="/about">
+                <Link href="/about-us">
                     <div className="navbar-item">
                         About
                     </div>
